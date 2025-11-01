@@ -1,0 +1,153 @@
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+nav.navbar {
+    background-color: #1E202B;
+}
+
+.logo-type {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 15px;
+}
+
+h1 {
+    font-size: initial;
+    margin-bottom: -10px;
+}
+
+.site-description {
+    color: #bfc1c8;
+    font-size: x-small;
+}
+.nav-link {
+    padding-inline: 30px !important;
+    color: white;
+    border: 2px solid transparent; /* Reserve space for border */
+    border-radius: 30px;
+    transition: all 0.3s ease; 
+}
+
+.navbar-nav .nav-link.active,
+.nav-link:hover {
+    border-color: #009ad8; 
+    background-color: #009ad8;
+}
+
+a.nav-link:hover{
+    color: #ffffff;
+} 
+
+.p-sect {
+    padding: 70px 0 0 0 ;
+}
+
+.weather-forecast {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.45), rgba(255, 255, 255, 0.75)), url(../imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 85vh;
+
+}
+
+.weather-forecast .container {
+    width: 100%;
+    min-height: 85vh;
+    /* background: rgba(0, 0, 0, 0.15); */
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+}
+
+.weather-forecast input,
+.weather-forecast input:focus,
+footer input.emailInput, 
+footer input.emailInput:focus {
+    border-radius: 30px;
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    box-shadow: none;
+    outline: none;
+    border:none ;
+}
+
+.btn-find,
+.btn-find:hover,
+.btn-sub, 
+.btn-sub:hover {
+    padding-inline: 30px;
+    color: white;
+    border: 2px solid #009ad8;
+    border-radius: 30px;
+    background-color: #009ad8;
+    top: 60px;
+    right: 63px;
+}
+
+@media (max-width: 991px) {
+    .card-group {
+        display: block;
+    }
+    .card-group>.card {
+    margin-bottom: 0.75rem;
+}
+}
+
+
+@media (min-width: 992px) {
+    .card-group {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+.card {
+    /* background-color: #1e202be3; */
+    /* background: rgba(0, 0, 0, 0.15); */
+    background: rgba(0, 0, 0, 0.35);
+
+}
+
+.card-header {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    font-weight: 400;
+}
+
+.custom {
+    color: #29c1ff;
+}
+
+.forecast-icon img{
+    width: 100px;
+    height: 100px;
+}
+
+.site-footer {
+    background: #262936;
+    padding: 50px 0;
+}
+
+.site-footer .social-links a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    transition: 0.3s ease;
+    font-size: 20px;
+}
+
+.site-footer .social-links a:hover {
+    color: white;
+    background-color: #009ad8;
+}

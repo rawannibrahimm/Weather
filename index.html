@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icons -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+        rel="stylesheet"/>
+
+    <!-- Bootstrap ToolKit -->
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    
+    <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container col-md-10 m-auto">
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="imgs/logo@2x.png" alt="Logo" width="64" height="38" class="d-inline-block mx-2 align-text-top">
+                    <div class="logo-type">
+						<h1 class="site-title">Weather</h1>
+						<small class="site-description">tagline goes here</small>
+					</div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav gap-md-2 ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Live Cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- End Navbar -->
+
+    
+        <!-- Start Weather Forecast Section -->
+        <section class="weather-forecast p-sect">
+            <div class="container col-md-10 m-auto">
+                <form class="p-5 position-relative" role="search"  data-bs-theme="dark">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Find your location" aria-label="Search"/>
+                    <button class="btn btn-find position-absolute" type="button">Find</button>
+                </form>
+
+                <div class="card-group px-5 py-4">
+                    <div class="card weather-today" data-bs-theme="dark">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            Wednesday
+                            <span>29 October</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title location">
+                                <i class="ri-map-pin-line me-1"></i>
+                                Cairo
+                            </h5>
+                            <div class="current-weather d-flex justify-content-between align-items-center">
+                                
+                                <div class="weather-info d-flex flex-column">
+                                    <div class="degree fs-2">
+                                        °C
+                                    </div>
+                                    <div class="custom">
+
+                                    </div>
+                                </div>
+                                <div class="forecast-icon">
+                                    <img src="" alt="weather-status">
+                                </div>
+                            </div>
+                            <div class="rest-of-info d-flex gap-4 mt-4">
+                                        <span><img src="imgs/icon-umberella.png" class="m-1" alt="umberella">20%</span> 
+                                        <span><img src="imgs/icon-wind.png" class="m-1"  alt="wind">18km/h</span> 
+                                        <span><img src="imgs/icon-compass.png" class="m-1"  alt="compass">East</span> 
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="card weather-forecasting" data-bs-theme="dark">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            Wednesday
+                            <span>29 October</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="current-weather d-flex justify-content-between align-items-center">
+                                <div class="weather-info d-flex flex-column">
+                                    <div class="degree fs-2">
+                                        °C
+                                    </div>
+                                    <div class="degree">
+                                        °C
+                                    </div>
+                                    <div class="custom">
+
+                                    </div>
+                                </div>
+                                <div class="forecast-icon">
+                                    <img src="" alt="weather-status">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card weather-forecasting" data-bs-theme="dark">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            Wednesday
+                            <span>29 October</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="current-weather d-flex justify-content-between align-items-center">
+                                <div class="weather-info d-flex flex-column">
+                                    <div class="degree fs-2">
+                                        °C
+                                    </div>
+                                    <div class="degree">
+                                        °C
+                                    </div>
+                                    <div class="custom">
+
+                                    </div>
+                                </div>
+                                <div class="forecast-icon">
+                                    <img src="" alt="weather-status">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- End Weather Forecast Section -->
+
+        <!-- Start Footer -->
+        <footer class="site-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<form class="p-5 position-relative">
+								<input type="text" class="emailInput" placeholder="Enter your email to subscribe...">
+								<button class="btn btn-sub position-absolute" type="button">Subscribe</button>
+							</form>
+						</div>
+						<div class="col-md-3 col-md-offset-1 d-flex align-items-center">
+							<div class="social-links">
+								<a href="#"><i class="ri-facebook-fill"></i></a>
+								<a href="#"><i class="ri-twitter-fill"></i></a>
+								<a href="#"><i class="ri-chrome-fill"></i></a>
+								<a href="#"><i class="ri-pinterest-fill"></i></a>
+							</div>
+						</div>
+					</div>
+					<p class="col-md-11 m-auto  text-white-50 ">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+				</div>
+			</footer>
+        <!-- End Footer -->
+    
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
