@@ -45,7 +45,7 @@ async function getWeather( searchLocation = "egypt") {
     try {  
         // Making only one request as the weather forecast api returns the data of the current day too 
         // var response = await fetch(`http://api.weatherapi.com/v1/current.json?key=214c1edf66184abf8db200615252910&q=${searchLocation}`)
-        var forecastResponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=214c1edf66184abf8db200615252910&q=${searchLocation}&days=3`)
+        var forecastResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=214c1edf66184abf8db200615252910&q=${searchLocation}&days=3`)
         // var data = await response.json()
         var forecastData = await forecastResponse.json()
         // console.log(data)
